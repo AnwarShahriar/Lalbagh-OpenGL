@@ -4,7 +4,7 @@ This is an old OpenGL project showing a 3D rendered environment of Lalbagh Fort 
 
 #### Here's a Wikipedia link about [Lalbagh Fort](https://en.wikipedia.org/wiki/Lalbagh_Fort)
 
-> This project is now only compatible with linux (As my primary OS is Linux). I've tested it with Ubuntu 16.04 LTS
+> Previously this project `windows.h` header file (I was using Windows back then) but now the dependency is removed and the code is made compatible only for Linux (because now all my machines run on Linux). I've tested it with Ubuntu 16.04 LTS version.
 
 To Build this code you need the following dependencies: (This is for Ubuntu or debian based system)
 1. freeglut3 (sudo apt-get install freeglut3)
