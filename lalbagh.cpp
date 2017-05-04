@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-//#include<windows.h>
 #include <math.h>
 #include <string.h>
 #include "Vector.h"
@@ -91,67 +90,13 @@ typedef struct tagBITMAPINFOHEADER {
 
 int LoadBitmap(char *filename, int width, int height)
 {
-    // GLuint texture;
-
-    // int width, height;
-
-    // unsigned char * data;
-    // BITMAPFILEHEADER fileheader;
-    // BITMAPINFOHEADER infoheader;
-    // FILE * file;
-
-    // file = fopen( filename, "rb" );
-
-    // if ( file == NULL ) return -1;
-    // fread(&fileheader,sizeof(fileheader),1,file);
-    // fseek(file,sizeof(fileheader),SEEK_SET);
-    // fread(&infoheader,sizeof(infoheader),1,file);
-
-    // width = 256;
-    // height = 128;
-
-    // printf("%d %d", 1, 1);
-    
-    // data = (unsigned char *)malloc( width * height * 3 );
-    // //int size = fseek(file,);
-    // fread( data, width * height * 3, 1, file );
-    // fclose( file );
-
-    // for(int i = 0; i < width * height ; ++i)
-    // {
-    //     int index = i*3;
-    //     unsigned char B,R;
-    //     B = data[index];
-    //     R = data[index+2];
-
-    //     data[index] = R;
-    //     data[index+2] = B;
-
-    // }
-
-
-    // glGenTextures( 1, &texture );
-    // glBindTexture( GL_TEXTURE_2D, texture );
-    // glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE,GL_MODULATE );
-    // glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,GL_LINEAR_MIPMAP_NEAREST );
-
-
-    // glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER,GL_LINEAR );
-    // glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,GL_REPEAT );
-    // glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,GL_REPEAT );
-    // gluBuild2DMipmaps( GL_TEXTURE_2D, 3, width, height,GL_RGB, GL_UNSIGNED_BYTE, data );
-    // free( data );
-
-    // return texture;
-    //printf("1111\n");
-
     int i,j=0;
     FILE *l_file;
     unsigned char *l_texture;
-    BITMAPFILEHEADER fileheader;
-    BITMAPINFOHEADER infoheader;
+    BITMAPFILEHEADER fileheader; // not used
+    BITMAPINFOHEADER infoheader; // not used
     RGBTRIPLE rgb;
-    //printf("22222\n");
+
     num_texture++;
     if((l_file=fopen(filename,"rb"))==NULL)return(-1);
     //printf("3333333\n");
@@ -191,11 +136,6 @@ int LoadBitmap(char *filename, int width, int height)
     free(l_texture);
     return(num_texture);
 }
-
-
-
-
-
 
 class Point3{
 public:
