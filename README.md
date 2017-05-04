@@ -1,6 +1,6 @@
 ## Lalbagh Fort in 3D (OpenGL)
 
-This is an old OpenGL project showing a 3D rendered environment of Lalbagh Fort I had done as an undergrad student. Long ago I lost the sources of this piece of Art ;) (I didn't know about git back then). I've found it again recently as an attachment in one of my old email account and thought why not share it with the world :) Please feel free to move around and fork it as you like.
+This is an old OpenGL project showing a 3D rendered environment of Lalbagh Fort I had done as an undergrad student. Long ago I lost the source codes of this piece of Art ;) (I didn't know about git back then). I've found it again recently as an attachment in one of my old email account and thought why not share it with the world :) (That's why you'll see that all code is comitted under the first commit) Please feel free to move around and fork it as you like.
 
 #### Here's a Wikipedia link about [Lalbagh Fort](https://en.wikipedia.org/wiki/Lalbagh_Fort)
 
