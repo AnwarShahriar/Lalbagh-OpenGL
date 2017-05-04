@@ -99,11 +99,10 @@ int LoadBitmap(char *filename, int width, int height)
 
     num_texture++;
     if((l_file=fopen(filename,"rb"))==NULL)return(-1);
-    //printf("3333333\n");
-    // fread(&fileheader,sizeof(fileheader),1,l_file);
-    
+
+    // There's a SEGFAULT: Find it ;)
+    // fread(&fileheader,sizeof(fileheader),1,l_file);    
     // fseek(l_file,sizeof(fileheader),SEEK_SET);
-    
     // fread(&infoheader,sizeof(infoheader),1,l_file);
     
     infoheader.biWidth = width;
